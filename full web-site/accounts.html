@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/fontawsome.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/slider.css">
+</head>
+<body>
+  <div class="preloader" id="preloader">
+    <img src="./icons/Quarter-Circle-Loading.svg" alt="" class="preloader-gif">
+  </div>
+  <main>
+    <a href="./index.html">
+    <div class="logo sub-logo">
+      <h1>XID</h1>
+    </div>
+    </a>
+    <section class="main-style-section account-section">
+      <h1 class="section-title">Accounts</h1>
+      <aside class="account-content">
+        <section class="cover-panel">
+          <aside class="cover-panel-content">
+            <p class="cover-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error excepturi minima aliquid velit facere quos.</p>
+            <div class="cover-toggle-btn-container">
+              <button class="cover-toggle-btn sign-up=btn" id="sign-up">Sign up</button>
+              <button class="cover-toggle-btn sign-in-btn" id="sign-in">Sign in</button>
+            </div>
+          </aside>
+        </section>
+        <section class="acc-sign sign-in-form">
+          <h2 class="account-title">Sign In</h2>
+          <form action="" class="form-content">
+            <input type="text" name="name" id="name" class="acc-form-input" placeholder="Name">
+            <input type="email" name="email" id="email" class="acc-form-input" placeholder="Email">
+            <input type="password" name="password" id="password" class="acc-form-input" placeholder="Password">
+            <button type="submit" class="acc-submit-btn">Sign in</button>
+          </form>
+        </section>
+        <section class="acc-sign sign-up-form">
+          <h2 class="account-title">Sign Up</h2>
+          <form action="" class="form-content">   
+            <input type="text" name="fname" id="fname" class="acc-form-input" placeholder="First name">
+            <input type="text" name="lname" id="lname" class="acc-form-input" placeholder="Last name">
+            <input type="email" name="email" id="email" class="acc-form-input" placeholder="Email">
+            <input type="password" name="password" id="password" class="acc-form-input" placeholder="Password">
+            <input type="password" name="conPassword" id="conPassword" class="acc-form-input" placeholder="Confirm password">
+            <button type="submit" class="acc-submit-btn">Sign Up</button>
+          </form>
+        </section>
+      </aside>
+    </section>
+    <!-- footer -->
+    <footer class="main-style-section" id="footer">
+      <section class="footer-content">
+        <h1 class="footer-title">UX/UI Designer</h1>
+        <p class="footer-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.</p>
+        <aside class="footer-links-content">
+          <ul class="footer-list">
+            <li class="footer-link-item">
+              <a href="#" class="footer-link"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li class="footer-link-item">
+              <a href="#" class="footer-link"><i class="fab fa-youtube"></i></a>
+            </li>
+            <li class="footer-link-item">
+              <a href="#" class="footer-link"><i class="fab fa-github"></i></a>
+            </li>
+            <li class="footer-link-item">
+              <a href="#" class="footer-link"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="footer-link-item">
+              <a href="#" class="footer-link"><i class="fab fa-google-plus-g"></i></a>
+            </li>
+          </ul>
+        </aside>
+        <p class="footer-copyright">&copy;copyright &copy; backroads trave tours company <span id="date"></span> .All rights reserved</p>
+      </section>
+    </footer>
+    <!-- end of footer -->
+    <!-- top scroll button -->
+    <a href="#header" class="scroll-link top-link"><i class="fas fa-arrow-up"></i></a>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="./js/script.js"></script>
+  <script>
+    const coverPanel = document.querySelector(".cover-panel");
+    const signInBtn = document.querySelector("#sign-in");
+    const signUpBtn = document.querySelector("#sign-up");
+
+    signUpBtn.addEventListener("click", function(){
+      coverPanel.classList.add('toggle-cover-panel');
+      signUpBtn.style.display = 'none';
+      signInBtn.style.display = 'block';
+    });
+
+    signInBtn.addEventListener("click", function(){
+        coverPanel.classList.remove('toggle-cover-panel');
+        signUpBtn.style.display = 'block';
+        signInBtn.style.display = 'none';
+    });
+  </script>
+</body>
+</html>
