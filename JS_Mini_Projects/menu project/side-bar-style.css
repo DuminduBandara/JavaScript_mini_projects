@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: sans-serif; */
+}
+
+.sidebar-toggle {
+    position: fixed;
+    top: 2rem;
+    right: 3rem;
+    font-size: 1.5rem;
+    background: transparent;
+    border-color: transparent;
+    /* color: var(--clr-primary-5); */
+    transition: 1s ease;
+    cursor: pointer;
+    animation: bounce 2s ease-in-out infinite;
+    color:antiquewhite;
+}
+
+
+@keyframes bounce{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+.sidebar-header{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 0.5rem 2rem 1.5rem;
+    position:relative;
+}
+
+.logo{
+    width:75px;
+    position:absolute;
+    left:0.5rem;
+}
+
+.sidebar-header h1{
+    color:lightcyan;
+    font-size:2rem;
+}
+
+.close-btn {
+    font-size: 1.75rem;
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    transition: 1s ease;
+    color: lightcyan;
+    right:1rem;
+    top:1rem;
+    position:absolute;
+}
+
+.close-btn:hover {
+    transform: rotate(180deg);
+    color:lightyellow;
+}
+
+.links{
+    padding-top:4rem;
+}
+
+.links a {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 1rem 1.5rem;
+    transition: 1s ease;
+    text-decoration: none;
+    color:#fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.links a:hover {
+    color: lightgray;
+    padding-left: 1.75rem;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff827a;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 1rem;
+    list-style: none;
+    /* box-shadow: var(--clr-red-dark); */
+    transition: 1s ease;
+    transform: translate(-100%);
+    z-index:100;
+}
+
+.social-media{
+    display: flex;
+    position: absolute;
+    bottom:4rem;
+    left:2.5rem;
+    list-style: none;
+    display: flex;
+    justify-content:space-between;
+    width:50%;
+}
+
+.social-media a{
+    font-size:1.8rem;
+    color:#ff1414;
+    font-weight: bold;
+    transition:1s ease;
+}
+
+.social-media a:hover{
+    color:#fff;
+    font-size:2rem;
+}
+
+
+
+.show-sidebar {
+   transform: translate(0%);
+}
+
+@media screen and (min-width: 676px) {
+   .sidebar {
+       width: 400px;
+    }
+}
+

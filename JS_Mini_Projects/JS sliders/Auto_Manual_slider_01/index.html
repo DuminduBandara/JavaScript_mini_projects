@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Image slider</title>
+   <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+   <div class="slideshow-container">
+
+      <!-- slider items -->
+
+      <div class="mySlides fade">
+         <!-- <div class="numbertext">1/3</div> -->
+         <img src="./images/img4.jpg" alt="#" style="width:100%;">
+         <!-- <div class="text">Caption one</div> -->
+      </div>
+
+      <div class="mySlides fade">
+         <!-- <div class="numbertext">2/3</div> -->
+         <img src="./images/img2.jpg" alt="#" style="width:100%;">
+         <!-- <div class="text">Caption two</div> -->
+      </div>
+      
+      <div class="mySlides fade">
+         <!-- <div class="numbertext">3/3</div> -->
+         <img src="./images/img3.jpg" alt="#" style="width:100%;">
+         <!-- <div class="text">Caption three</div> -->
+
+      </div>
+
+      <!-- toggle buttons -->
+      <a class="prev" onclick="plusSlides(-1)">
+         <i class="fas fa-arrow-left"></i>
+      </a>
+      <a class="next" onclick="plusSlides(1)">
+         <i class="fas fa-arrow-right"></i>
+      </a>
+
+      <div class="dot-center">
+         <span class="dot" onclick="currentSlide(1)"></span>
+         <span class="dot" onclick="currentSlide(2)"></span>
+         <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+   </div>
+   <script src="./js/script.js"></script>
+</body>
+</html>

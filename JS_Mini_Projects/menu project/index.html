@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./side-bar-style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <section class="menu">
+        <div class="logo">
+            <img src="./logo.png" alt="logo" class="logo-img">
+        </div>
+        <!-- side bar -->
+        <!-- hamburger -->
+        <button class="sidebar-toggle"><i class="fas fa-bars"></i></button>
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="./logo.png" alt="logo" class="logo">
+                <button class="close-btn"><i class="fas fa-times"></i></button>
+            </div>
+            <ul class="links">
+                <li>
+                <a href="index.html">Home</a>
+                </li>
+                <li>
+                <a href="about.html">Bookings</a>
+                </li>
+                <li>
+                <a href="projects.html">Taxi Service</a>
+                </li>
+                <li>
+                    <a href="contact.html">Delivery</a>
+                </li>
+                <li>
+                    <a href="contact.html">Features</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <ul class="social-media">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </aside>
+        <!-- end hamburger -->
+        <!-- side bar end -->
+        <!-- title -->
+        <div class="title">
+            <h2>Our Menu</h2>
+            <div class="underline"></div>
+        </div>
+        <!-- filter-buttons -->
+        <div class="btn-container">
+            <button class="filter-btn" type="button" data-id="all">All</button>
+            <button class="filter-btn" type="button" data-id="breakfast">Breakfast</button>
+            <button class="filter-btn" type="button" data-id="lunch">Lunch</button>
+            <button class="filter-btn" type="button" data-id="shakes">Shakes</button>
+        </div>
+        <!-- menu items -->
+        <div class="section-center">
+            <!-- single item -->
+            <article class="menu-item">
+                <div class="hide">
+                    <button class="check"><i class="fas fa-shopping-cart"></i>Order Now</button>
+                </div>
+                <img src="https://images.unsplash.com/photo-1637637187692-9736fe7b7973?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDV8eGpQUjRobGtCR0F8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="##" class="photo">
+                <div class="item-info">
+                    <header>
+                        <h4>Smoke burger</h4>
+                        <h4 class="price">LKR15</h4>
+                    </header>
+                    <p class="item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat autem et commodi veritatis saepe quos nostrum quis minima ipsa vitae.</p>
+                </div>
+            </article>
+            <!-- end of single-item -->
+        </div>
+    </section>
+    <script src="./script.js"></script>
+    <script src="./side-bar-script.js"></script>
+</body>
+</html>
